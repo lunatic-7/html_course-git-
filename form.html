@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <form action="./pages/thankyou.html" method="GET">
+        <label for="username">Username : </label> <!-- In for and id we write same thing to make it identify.-->
+        <input type="text" id="username" name="username" placeholder="username" required> <br> <br> <!-- and focus on it that, it is a part of it -->
+
+        <label for="password">Password : </label>
+        <input type="password" id="password" name="password" placeholder="password" required> <br> <br> <!--Here, type input:password and press enter it will autofill.-->
+
+        <label for="email">Email : </label>
+        <input type="email" id="email" name="email" placeholder="email" required> <br> <br> <!--Here, type input:email and press enter it will autofill.-->
+        
+        <p>Select your gender</p>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male"> <br>
+
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female"> <br>
+
+        <label for="others">Others</label>
+        <input type="radio" name="gender" id="others" value="others"> <br> <br>
+
+        <label for="age-group">Select your age group</label>
+        <select name="Age-group-Values" id="age-group"> <!--name and value are for our backend information.-->
+            <option value="5-10">5-10</option>
+            <option value="11-18">11-18</option>
+            <option value="19-50">19-50</option>
+            <option value="50+">50+</option>
+        </select> <br> <br>
+
+        <input type="submit" value="Sign in"> <!--Here, type input:submit and press enter it will autofill.-->
+    </form>
+    
+</body>
+</html>
+
+<!-- action, method and name, we will study them again later, Don't worry :)-->
+<!-- In placeholder we type anything which we want to show in fill up form in highlighted way.-->
+<!-- We set them to required, it means it is necessary to fill, form won't be submitted if we laave that field. -->
+<!-- In radio we wil set all their name attributes same, eg here gender. So, that we won't
+be able to select more than one option.-->
+<!--We can set value to anything, it is just for our backend information.-->
